@@ -17,7 +17,6 @@
   list-style: none;
 }
 
-
 .header__link_active {
   text-decoration: none;
 }
@@ -70,8 +69,10 @@
   width: 100%;
 }
 
-
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   position: relative;
   z-index: 2;
   color: #ffffff;
@@ -80,26 +81,19 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 30px;
+  width: 100%;
 }
 
 .aligned-text {
   display: block;
 }
 
-.aligned-text_left {
-  text-align: left;
-}
-
 .aligned-text_center {
   text-align: center;
-  margin-top: 20px;
-  margin-left: 30px;
 }
 
 .aligned-text_right {
-  text-align: right;
-  margin-top: 20px;
-  margin-right: -30px;
+  text-align: end;
 }
 
 .no-letter-spacing {
@@ -241,8 +235,8 @@
   margin: 0 0 24px 0;
 }
 
-.about__text{
-  max-width:  688px;
+.about__text {
+  max-width: 688px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
